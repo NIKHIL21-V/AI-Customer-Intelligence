@@ -1,0 +1,30 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+.venv/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Environment variables
+.env
+
+# IDE settings
+.vscode/
+
+# Temporary files
+*.log
+.DS_Store
+
+# Sensitive files
+secrets.toml
+
+# Exclude original datasets
+data/*.xlsx
+data/*.zip
+
+# Exclude row-level prediction exports
+reports/customer_churn_predictions.csv

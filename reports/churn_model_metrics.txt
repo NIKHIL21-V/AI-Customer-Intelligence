@@ -1,0 +1,36 @@
+
+CUSTOMER CHURN MODEL EVALUATION
+================================
+
+Churn definition:
+No purchase during the final 90 days of the dataset.
+
+Eligible customers: 3,370
+Training customers: 2,696
+Testing customers: 674
+
+Churn rate: 43.00%
+Accuracy: 0.6409
+ROC-AUC: 0.7118
+
+Confusion Matrix:
+[[223 161]
+ [ 81 209]]
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.73      0.58      0.65       384
+           1       0.56      0.72      0.63       290
+
+    accuracy                           0.64       674
+   macro avg       0.65      0.65      0.64       674
+weighted avg       0.66      0.64      0.64       674
+
+
+IMPORTANT LIMITATION:
+This is a demonstration model trained on historical purchasing
+features with an inactivity-based label. A random holdout split
+does not establish reliable future-period performance. Use a
+strictly time-based validation design before using predictions
+for real business decisions.
